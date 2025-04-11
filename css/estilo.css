@@ -1,0 +1,281 @@
+body{
+	/*background-image es para imagen de fondo*/
+	background-image:url("../imagenes/fondo azul.jpg");
+	/*font-family es para la tipografia*/
+	font-family:fuente-escuela;
+	/*font-size es para el tamaño de la letra en pixeles*/
+	font-size:40px;
+	/*color es para el color de las letras*/
+	color:#6C3483;
+	/*text-align es para aliniar el texto*/
+	text-align:center;
+	/*es para tener letras en negritas*/
+	font-weight:bold;
+}
+hr{
+	/*border es para la linea grosor en pixeles, tipo de linea, color*/
+	border:3px solid #4A235A;
+	/*width es para el ancho de la linea en %*/
+	width:80%;
+	/*border-radius es para la curva de la linea*/
+	border-radius:5px;
+}
+p{
+	/*tamaño de la letra*/
+	font-size:30px;
+	/*alineacion del texto*/
+	text-align:center;
+	/*interliniado*/
+	line-height:1.5;
+	/*espacio entre las letras*/
+	letter-spacing:2px
+}
+table,tr,td{
+	border:1px solid #5B2C6F;
+	border-spacing:0px;
+	background-color:#E8DAEF;
+	text-align:center;
+	font-size:20px;
+}
+/*clases*/
+.pie{
+	text-align:center;
+	font-size:15px;
+	font-weight:bold;
+	/*background-color:#A569BD;*/
+	/*background-image:linear-gradient(#C39BD3,#E8DAEF );*/
+	/*background-image:radial-gradient (#C39BD3,#E8DAEF );*/
+	background-image:linear-gradient(#C39BD3,#E8DAEF );
+}
+.sup{
+	text-align:center;
+	font-weight:bold;
+	height:75px;
+	font-family:fuente-SHCOOL;
+	/*background-color:#A569BD;*/
+	/*background-image:linear-gradient(#C39BD3,#E8DAEF );*/
+	/*background-image:radial-gradient (#C39BD3,#E8DAEF );*/
+	background-image:linear-gradient(#C39BD3,#E8DAEF );
+}
+.titulo{
+	text-align:center;
+	font-size:35px;
+	font-weight:bold;
+}
+/*carrusel de imagenes*/
+.carrusel{
+	width:600px;
+	margin:auto;
+	box-sizing:border-box;
+}
+.contecarrusel{
+	width:100%;
+	height:400px;
+	overflow:hidden;
+	box-sizing:border-box;
+}
+.itemcarrusel{
+	position:relative;
+	width:100%;
+	height:100%;
+	box-sizing:border-box;
+}
+.itemcarruseltarjeta{
+	width:100%;
+	height:100%;
+	box-sizing:border-box;
+}
+.itemcarruselarrows{
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	height:100%;
+	width:100%;
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+	padding:20px;
+	box-sizing:border-box;
+}
+.itemcarruselarrows> i:hover{
+	cursor:pointer;
+}
+.contecarruselcontroller{
+	width:100%;
+	display:flex;
+	justify-content:space-evenly;
+}
+.contecarruselcontroller>a{
+	text-decoration:none;
+	font-size:32px;
+	color:grey;
+}
+.itemcarruselarrows> a > i{
+	color:white;
+}
+/*cajas para productos*/
+.caja{
+	height:300px;
+	width:250px;
+	background:#E8DAEF;
+	border:1px solid #5B2C6F;
+	margin:5px;
+	color:black;
+	text-align:center;
+	display:inline-block;
+}
+.caja:hover{
+	box-shadow:0 0 10px red;
+	transform:scale(1.3);
+}
+.caja-texto{
+	padding-top:5px;
+	padding-bottom:5px;
+	font-size:20px;
+	color:#5B2C6F;
+	font-weight:bold;
+}
+.texto-adicional{
+	padding-top:5px;
+	font-size:15px;
+}
+.caja-2{
+	height:140px;
+	width:340px;
+	background:#E8DAEF;
+	border:5px solid #5B2C6F;
+	margin:5px;
+	color:black;
+	text-align:center;
+	display:inline-block;
+	font-size:20px;
+	}
+.caja-3{
+	background:#E8DAEF;
+	border:5px solid #5B2C6F;
+	margin:5px;
+	color:#5B2C6F;
+	text-align:center;
+	display:inline-flex;
+	font-size:20px;
+}
+.caja-4{
+	flex:1;
+	background:#E8DAEF;
+	border:5px solid #5B2C6F;
+	margin:5px;
+	color:#5B2C6F;
+	text-align:center;
+	font-size:20px;
+	display:block;
+}
+.caja-5{
+	flex:1;
+	background:#E8DAEF;
+	border:5px solid #5B2C6F;
+	margin:5px;
+	color:#5B2C6F;
+	text-align:center;
+	font-size:20px;
+	display:block;
+}
+/*Menu de navegacion*/
+.navegacion{
+	display:flex;
+	height:100px;
+}
+.navegacion-item{
+	flex:1;
+	color:#fff;
+	font-weight:bold;
+	font-size:25px;
+	display:flex;
+	transition:flex-grow 0.2s;
+	justify-content:center;
+	align-items:center;
+}
+.navegacion-item:hover{
+	flex-grow:10;
+}
+.navegacion-titulo{
+	margin:0;
+	transform:rotate(-90deg);
+	transition:transform: 0.2s 0.2s;
+	font-size:15px;
+	color:white;
+}
+.navegacion-item:hover .navegacion-titulo{
+	transform:rotate(0);
+}
+.navegacion-item:nth-child(1){
+	background:#D4E6F1;
+}
+.navegacion-item:nth-child(2){
+	background:#A9CCE3;
+}
+.navegacion-item:nth-child(3){
+	background:#7FB3D5;
+}
+.navegacion-item:nth-child(4){
+	background:#5499C7;
+}
+@font-face{
+	font-family:fuente-Schoolkid;
+	src:url(../fuetes/Schoolkid.otf);
+}
+@font-face{
+	font-family:fuente-escuela;
+	src:url(../fuetes/escuela.otf);
+}
+@font-face{
+	font-family:fuente-SHCOOL;
+	src:url(../fuetes/SHCOOL.ttf);
+}
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
